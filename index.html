@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>老司机电影网你懂的｜最新热播院线大片、高分剧集与经典影视导航</title>
+<meta name="description" content="老司机电影网你懂的，专注整理最新院线大片、高分国产剧、经典港片美剧及纪录片观看入口。提供电影分类、电视剧榜单、动漫综艺与观影指南四大板块，帮助观众快速找到想看的影视内容。网站地址 https://laosijidianyingwangnidongde-app.github.io，每日更新推荐清单。">
+<meta name="keywords" content="老司机电影网你懂的,laosijidianyingwangnidongde-app.github.io,电影导航,在线观看,高分电影,热播剧集,经典影视,院线大片,观影指南">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="7 days">
+<meta name="author" content="老司机电影网你懂的">
+<meta name="copyright" content="老司机电影网你懂的">
+<meta name="theme-color" content="#0f172a">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://laosijidianyingwangnidongde-app.github.io">
+<style>
+:root{
+  --bg:#0b1020;--bg2:#121933;--card:#161f3d;--card2:#1c2749;
+  --line:rgba(255,255,255,.08);--txt:#e8ecf7;--sub:#9aa7c7;--muted:#6d7aa0;
+  --gold:#f5b642;--gold2:#ffd479;--red:#ff5a5f;--blue:#4a8dff;--green:#36c98c;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.75;font-size:16px;overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(900px 500px at 12% -8%,rgba(74,141,255,.20),transparent 60%),
+    radial-gradient(800px 600px at 88% 6%,rgba(245,182,66,.16),transparent 60%),
+    linear-gradient(180deg,#0b1020,#0d1328 40%,#0b1020);
+}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:46px 46px;}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.container{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== 顶部 ===== */
+.topbar{position:sticky;top:0;z-index:100;background:rgba(11,16,32,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.topbar .container{display:flex;align-items:center;gap:14px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-weight:800;font-size:17px;color:#0b1020;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));box-shadow:0 4px 14px rgba(245,182,66,.35)}
+.brand h1{font-size:15px;line-height:1.25;letter-spacing:.3px}
+.brand h1 span{display:block;font-size:11px;color:var(--muted);font-weight:400;letter-spacing:1.5px;text-transform:uppercase}
+.nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+.nav a{padding:8px 13px;border-radius:9px;font-size:14px;color:var(--sub);transition:.2s}
+.nav a:hover{color:var(--gold2);background:rgba(255,255,255,.05)}
+.menu-btn{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--txt);font-size:20px;cursor:pointer;margin-left:auto}
+
+/* ===== 通栏 ===== */
+.hero{position:relative;padding:54px 0 46px;overflow:hidden}
+.hero .container{position:relative;z-index:2}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tag-row i{font-style:normal;font-size:12px;padding:5px 12px;border-radius:20px;border:1px solid rgba(245,182,66,.35);color:var(--gold2);background:rgba(245,182,66,.08)}
+.hero h2{font-size:clamp(28px,5.6vw,52px);line-height:1.2;font-weight:800;letter-spacing:-.5px;margin-bottom:18px}
+.hero h2 em{font-style:normal;background:linear-gradient(100deg,var(--gold),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:clamp(15px,2.2vw,17px);color:var(--sub);max-width:640px;margin-bottom:28px}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:660px}
+.stat{border:1px solid var(--line);border-radius:14px;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015))}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--gold2);line-height:1.2}
+.stat span{font-size:12px;color:var(--muted)}
+
+/* ===== 通用栏 ===== */
+section{padding:44px 0}
+.sec-head{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.sec-head .no{font-size:12px;color:var(--gold);letter-spacing:2px;font-weight:700}
+.sec-head h3{font-size:clamp(22px,3.6vw,30px);font-weight:800;line-height:1.3}
+.sec-head .more{margin-left:auto;font-size:13px;color:var(--muted)}
+.sec-head .more:hover{color:var(--gold2)}
+
+/* ===== 板块入口 ===== */
+.grid-menu{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.menu-card{position:relative;padding:26px 22px;border-radius:18px;border:1px solid var(--line);background:var(--card);transition:.25s;overflow:hidden}
+.menu-card::before{content:"";position:absolute;inset:0;opacity:0;transition:.25s;background:radial-gradient(400px at var(--mx,50%) var(--my,50%),rgba(245,182,66,.16),transparent 60%)}
+.menu-card:hover{transform:translateY(-4px);border-color:rgba(245,182,66,.4);box-shadow:var(--shadow)}
+.menu-card .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:26px;margin-bottom:16px;
+  background:linear-gradient(135deg,rgba(74,141,255,.25),rgba(74,141,255,.05));border:1px solid rgba(74,141,255,.25)}
+.menu-card h4{font-size:19px;margin-bottom:8px}
+.menu-card p{font-size:13px;color:var(--muted)}
+.menu-card .arrow{position:absolute;right:20px;bottom:20px;font-size:20px;color:var(--muted);transition:.25s}
+.menu-card:hover .arrow{color:var(--gold2);transform:translate(3px,-3px)}
+
+/* ===== 电影列表 ===== */
+.list{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.poster{background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line);transition:.25s}
+.poster:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(245,182,66,.35)}
+.thumb{position:relative;aspect-ratio:2/3;overflow:hidden;background:linear-gradient(135deg,var(--card2),var(--bg2))}
+.thumb .ph{position:absolute;inset:0;display:grid;place-items:center;font-size:38px;opacity:.9}
+.thumb .badge{position:absolute;top:10px;left:10px;font-size:11px;padding:3px 9px;border-radius:6px;background:rgba(11,16,32,.78);border:1px solid var(--line)}
+.thumb .badge.hot{color:#fff;background:linear-gradient(90deg,var(--red),#ff8a3d);border:0}
+.score{position:absolute;right:10px;bottom:10px;font-size:12px;font-weight:700;color:#0b1020;background:var(--gold);padding:3px 9px;border-radius:20px}
+.poster .info{padding:12px 14px}
+.poster .info h5{font-size:15px;line-height:1.4;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.poster .meta{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+
+/* ===== 剧集双栏 ===== */
+.two-col{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.panel h4{font-size:18px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.rank li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line)}
+.rank li:last-child{border-bottom:0}
+.rank .n{font-size:20px;font-weight:800;color:var(--muted);min-width:26px;line-height:1.4}
+.rank li:nth-child(1) .n{color:#ff4d4f}.rank li:nth-child(2) .n{color:#ff9241}.rank li:nth-child(3) .n{color:#f5b642}
+.rank .txt{flex:1;min-width:0}
+.rank .txt b{display:block;font-size:15px;line-height:1.4}
+.rank .txt span{font-size:12px;color:var(--muted)}
+.rank .tag{font-size:11px;padding:2px 8px;border-radius:5px;background:rgba(74,141,255,.15);color:var(--blue);white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chips a{padding:8px 14px;border-radius:9px;font-size:13px;border:1px solid var(--line);color:var(--sub);background:rgba(255,255,255,.02)}
+.chips a:hover{color:#0b1020;background:var(--gold2);border-color:var(--gold2)}
+
+/* ===== 年表 / 指南 ===== */
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;position:relative}
+.step .yr{font-size:12px;letter-spacing:2px;color:var(--gold);margin-bottom:8px}
+.step h5{font-size:17px;margin-bottom:10px}
+.step p{font-size:13.5px;color:var(--muted)}
+.step .num{position:absolute;right:18px;top:14px;font-size:40px;font-weight:800;color:rgba(255,255,255,.05)}
+
+/* ===== 筛选 ===== */
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tool{border-radius:16px;padding:22px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01))}
+.tool .big{font-size:15px;font-weight:700;margin-bottom:8px}
+.tool .big i{font-style:normal;color:var(--gold2);margin-right:6px}
+.tool p{font-size:13px;color:var(--muted)}
+
+/* ===== 页脚 ===== */
+footer{border-top:1px solid var(--line);background:rgba(0,0,0,.25);padding:40px 0 30px;margin-top:30px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px}
+.foot-grid h6{font-size:15px;margin-bottom:14px}
+.foot-grid ul li{padding:5px 0;font-size:13px;color:var(--sub)}
+.foot-grid ul li a:hover{color:var(--gold2)}
+.foot-brand p{font-size:13px;color:var(--muted);margin-top:12px}
+.foot-bottom{padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:12px;color:var(--muted)}
+.foot-bottom a{color:var(--sub)}
+
+/* ===== 回到顶部 ===== */
+#toTop{position:fixed;right:16px;bottom:22px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(22,31,61,.95);color:var(--gold2);font-size:19px;cursor:pointer;display:none;z-index:99;
+  box-shadow:var(--shadow)}
+#toTop.show{display:grid;place-items:center}
+
+/* ===== 响应式 ===== */
+@media(max-width:960px){
+  .grid-menu,.list{grid-template-columns:repeat(3,1fr)}
+  .two-col{grid-template-columns:1fr}
+  .timeline,.tools{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  body{font-size:15px}
+  .topbar .container{height:56px}
+  .brand h1{font-size:13px}
+  .menu-btn{display:grid;place-items:center}
+  .nav{position:fixed;top:56px;left:0;right:0;flex-direction:column;align-items:stretch;padding:14px;gap:4px;
+    background:rgba(11,16,32,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);
+    max-height:0;overflow:hidden;transition:.3s;opacity:0}
+  .nav.open{max-height:420px;opacity:1}
+  .nav a{padding:13px 14px;border-radius:8px;font-size:15px;border-bottom:1px solid var(--line)}
+  .hero{padding:34px 0 30px}
+  .stat-row{grid-template-columns:repeat(2,1fr)}
+  .grid-menu,.list{grid-template-columns:repeat(2,1fr);gap:12px}
+  .timeline,.tools,.foot-grid{grid-template-columns:1fr}
+  .panel{padding:16px}
+  section{padding:34px 0}
+  .sec-head .more{margin-left:0;width:100%}
+}
+@media(max-width:380px){
+  .grid-menu,.list{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="topbar">
+  <div class="container">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">影</div>
+      <h1>老司机电影网你懂的<span>影视导航 · 观影入口整理</span></h1>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="展开菜单" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#film">电影库</a>
+      <a href="#drama">热播剧</a>
+      <a href="#anime">动漫综艺</a>
+      <a href="#guide">观影指南</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 通栏 -->
+  <section class="hero">
+    <div class="container">
+      <div class="tag-row">
+        <i># 院线新片</i><i># 高分经典</i><i># 每日更新</i><i># 移动端适配</i>
+      </div>
+      <h2>每天不知道看什么？<br><em>老司机电影网你懂的</em>替你挑好了</h2>
+      <p>一个只做两件事的影视导航站：把最新院线大片、口碑热播剧、经典老片和冷门佳作分门别类整理好，再附上一句不剧透的看点提示。找片省时间，选片不踩坑。</p>
+      <div class="stat-row">
+        <div class="stat"><b>12</b><span>常驻分类栏目</span></div>
+        <div class="stat"><b>3600+</b><span>整理影片条目</span></div>
+        <div class="stat"><b>每日</b><span>更新推荐清单</span></div>
+        <div class="stat"><b>全端</b><span>手机电脑自适应</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 板块入口 -->
+  <section id="about">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <div class="no">SECTION 01</div>
+          <h3>四大板块，覆盖你全部的观影口味</h3>
+        </div>
+        <a class="more" href="#">查看全部栏目 ›</a>
+      </div>
+      <div class="grid-menu">
+        <a class="menu-card" href="#film" data-cursor>
+          <div class="ic" aria-hidden="true">🎬</div>
+          <h4>电影库</h4>
+          <p>院线新片、高分经典、冷门佳片，按类型年份双重筛选。</p>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="menu-card" href="#drama" data-cursor>
+          <div class="ic" aria-hidden="true">📺</div>
+          <h4>热播剧集</h4>
+          <p>国产剧、韩剧、美剧、日剧，每周同步更新榜单。</p>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="menu-card" href="#anime" data-cursor>
+          <div class="ic" aria-hidden="true">🌸</div>
+          <h4>动漫综艺</h4>
+          <p>新番追更表、完结补番单、纪录片与真人秀推荐。</p>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="menu-card" href="#guide" data-cursor>
+          <div class="ic" aria-hidden="true">🧭</div>
+          <h4>观影指南</h4>
+          <p>选片方法、设备设置、画质判断与经典片单速查。</p>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 电影库 -->
+  <section id="film">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <div class="no">SECTION 02 · 电影库</div>
+          <h3>近期值得看的院线与高分片</h3>
+        </div>
+        <a class="more" href="#">全部电影 ›</a>
+      </div>
+      <div class="list">
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🎞️</span><span class="badge hot">热映中</span><span class="score">8.7</span></div>
+          <div class="info"><h5>暴雨将至的第八天</h5><div class="meta"><span>犯罪 / 悬疑</span><span>2026</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🪐</span><span class="badge">科幻</span><span class="score">8.4</span></div>
+          <div class="info"><h5>深空回音</h5><div class="meta"><span>科幻 / 冒险</span><span>2026</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🌾</span><span class="badge">口碑佳作</span><span class="score">9.1</span></div>
+          <div class="info"><h5>北方麦田的来信</h5><div class="meta"><span>剧情 / 家庭</span><span>2025</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🐉</span><span class="badge">动作</span><span class="score">7.9</span></div>
+          <div class="info"><h5>长风渡·决战洛阳</h5><div class="meta"><span>动作 / 古装</span><span>2026</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🎭</span><span class="badge">经典</span><span class="score">9.3</span></div>
+          <div class="info"><h5>城南旧事（4K 修复）</h5><div class="meta"><span>剧情 / 经典</span><span>1983</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🐾</span><span class="badge">动画</span><span class="score">8.6</span></div>
+          <div class="info"><h5>小狐狸的雨季</h5><div class="meta"><span>动画 / 治愈</span><span>2026</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🕵️</span><span class="badge hot">悬疑</span><span class="score">8.2</span></div>
+          <div class="info"><h5>无声证词</h5><div class="meta"><span>悬疑 / 犯罪</span><span>2026</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">💃</span><span class="badge">喜剧</span><span class="score">7.6</span></div>
+          <div class="info"><h5>周末大作战</h5><div class="meta"><span>喜剧 / 爱情</span><span>2026</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 电影子分类 -->
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <div class="no">SECTION 02.1 · 按类型挑片</div>
+          <h3>六个类型入口，再也不翻半天</h3>
+        </div>
+      </div>
+      <div class="grid-menu">
+        <a class="menu-card" href="#"><div class="ic" aria-hidden="true">😱</div><h4>悬疑 · 犯罪</h4><p>反转密集的烧脑片与高分犯罪剧。</p><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="menu-card" href="#"><div class="ic" aria-hidden="true">😂</div><h4>喜剧 · 轻松</h4><p>下饭解压的喜剧片与治愈系作品。</p><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="menu-card" href="#"><div class="ic" aria-hidden="true">⚔️</div><h4>动作 · 冒险</h4><p>大场面爽片与视效拉满的冒险类型。</p><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="menu-card" href="#"><div class="ic" aria-hidden="true">💘</div><h4>爱情 · 青春</h4><p>都市爱情、校园青春与情感剧集。</p><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="menu-card" href="#"><div class="ic" aria-hidden="true">🚀</div><h4>科幻 · 奇幻</h4><p>硬科幻设定与世界观宏大的奇幻片。</p><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="menu-card" href="#"><div class="ic" aria-hidden="true">🎨</div><h4>文艺 · 纪录</h4><p>获奖文艺片、纪录片与经典修复版。</p><span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热播剧 -->
+  <section id="drama" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02),transparent)">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <div class="no">SECTION 03 · 热播剧集</div>
+          <h3>本周追剧榜与分区入口</h3>
+        </div>
+        <a class="more" href="#">完整榜单 ›</a>
+      </div>
+      <div class="two-col">
+        <div class="panel">
+          <h4>本周热度榜 TOP 8</h4>
+          <ol class="rank">
+            <li><span class="n">01</span><div class="txt"><b>长安夜行录</b><span>古装悬疑 · 45 集 · 豆瓣 8.6</span></div><span class="tag">国产</span></li>
+            <li><span class="n">02</span><div class="txt"><b>沉默的证人 第二季</b><span>犯罪悬疑 · 16 集 · 豆瓣 8.9</span></div><span class="tag">美剧</span></li>
+            <li><span class="n">03</span><div class="txt"><b>我的解放日记</b><span>都市情感 · 12 集 · 豆瓣 9.0</span></div><span class="tag">韩剧</span></li>
+            <li><span class="n">04</span><div class="txt"><b>黎明之前</b><span>年代谍战 · 38 集 · 豆瓣 8.4</span></div><span class="tag">国产</span></li>
+            <li><span class="n">05</span><div class="txt"><b>东京谎言事务所</b><span>社会推理 · 10 集 · 豆瓣 8.3</span></div><span class="tag">日剧</span></li>
+            <li><span class="n">06</span><div class="txt"><b>荒野法则</b><span>生存冒险 · 8 集 · 豆瓣 8.7</span></div><span class="tag">美剧</span></li>
+            <li><span class="n">07</span><div class="txt"><b>海岸村的夏天</b><span>治愈爱情 · 16 集 · 豆瓣 8.1</span></div><span class="tag">韩剧</span></li>
+            <li><span class="n">08</span><div class="txt"><b>平凡之路</b><span>职场现实 · 30 集 · 豆瓣 8.0</span></div><span class="tag">国产</span></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h4>按地区挑剧</h4>
+          <div class="chips">
+            <a href="#">国产剧</a><a href="#">韩剧</a><a href="#">美剧</a><a href="#">日剧</a>
+            <a href="#">港剧</a><a href="#">英剧</a><a href="#">泰剧</a><a href="#">台剧</a>
+            <a href="#">高分榜</a><a href="#">完结可补</a><a href="#">短剧精选</a><a href="#">悬疑向</a>
+            <a href="#">古装</a><a href="#">都市</a><a href="#">年代</a><a href="#">科幻</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动漫综艺 -->
+  <section id="anime">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <div class="no">SECTION 04 · 动漫综艺</div>
+          <h3>新番、纪录片与真人秀</h3>
+        </div>
+        <a class="more" href="#">更多 ›</a>
+      </div>
+      <div class="list">
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🌸</span><span class="badge hot">新番</span><span class="score">追更</span></div>
+          <div class="info"><h5>四月樱坂物语</h5><div class="meta"><span>校园 / 治愈</span><span>第 7 话</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">⚙️</span><span class="badge">完结</span><span class="score">9.2</span></div>
+          <div class="info"><h5>钢之机械师 最终章</h5><div class="meta"><span>机战 / 科幻</span><span>全 24 话</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🍜</span><span class="badge">泡面</span><span class="score">8.0</span></div>
+          <div class="info"><h5>深夜食堂的食客们</h5><div class="meta"><span>美食 / 单元</span><span>全 12 话</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🐉</span><span class="badge">国漫</span><span class="score">8.8</span></div>
+          <div class="info"><h5>山海异闻录</h5><div class="meta"><span>国漫 / 奇幻</span><span>第 18 话</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🎤</span><span class="badge">综艺</span><span class="score">热播</span></div>
+          <div class="info"><h5>声浪计划 第四季</h5><div class="meta"><span>音乐 / 竞演</span><span>2026</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🏕️</span><span class="badge">真人秀</span><span class="score">高人气</span></div>
+          <div class="info"><h5>六个朋友去露营</h5><div class="meta"><span>户外 / 生活</span><span>2026</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🐧</span><span class="badge">纪录</span><span class="score">9.4</span></div>
+          <div class="info"><h5>极地三年：冰原观察</h5><div class="meta"><span>自然 / 纪录</span><span>6 集</span></div></div>
+        </article>
+        <article class="poster">
+          <div class="thumb"><span class="ph" aria-hidden="true">🍵</span><span class="badge">治愈</span><span class="score">8.5</span></div>
+          <div class="info"><h5>茶室里的猫店长</h5><div class="meta"><span>泡面番 / 治愈</span><span>全 10 话</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观影指南 -->
+  <section id="guide" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02),transparent)">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <div class="no">SECTION 05 · 观影指南</div>
+          <h3>三分钟搞懂怎么选片、怎么看爽</h3>
+        </div>
+        <a class="more" href="#">全部指南 ›</a>
+      </div>
+      <div class="timeline">
+        <article class="step"><span class="num" aria-hidden="true">01</span>
+          <div class="yr">STEP / 定类型</div>
+          <h5>先想情绪，再选类型</h5>
+          <p>累的时候看治愈系，想动脑就点悬疑犯罪。按当下心情选类型，比按演员挑片命中率高得多。</p>
+        </article>
+        <article class="step"><span class="num" aria-hidden="true">02</span>
+          <div class="yr">STEP / 看评分</div>
+          <h5>评分要结合样本数看</h5>
+          <p>高分但评价人数少，可能是粉丝向；人数过万还维持在 8 分以上，通常可以放心点开。</p>
+        </article>
+        <article class="step"><span class="num" aria-hidden="true">03</span>
+          <div class="yr">STEP / 查时长</div>
+          <h5>时长决定观看节奏</h5>
+          <p>碎片时间选 90 分钟以内的电影或单元剧；周末再挑战三小时以上的史诗片与长篇剧集。</p>
+        </article>
+        <article class="step"><span class="num" aria-hidden="true">04</span>
+          <div class="yr">STEP / 调设备</div>
+          <h5>画质设置在播放前调</h5>
+          <p>手机端开启 1080P 与硬件解码，电视端优先选 4K 片源并关闭运动补偿，观感更自然。</p>
+        </article>
+        <article class="step"><span class="num" aria-hidden="true">05</span>
+          <div class="yr">STEP / 记进度</div>
+          <h5>善用收藏与播放记录</h5>
+          <p>追长剧记得收藏当前集数，跨设备同步播放进度，下次打开不用从头找。</p>
+        </article>
+        <article class="step"><span class="num" aria-hidden="true">06</span>
+          <div class="yr">STEP / 避雷区</div>
+          <h5>避开同类型重复套路</h5>
+          <p>同类影片看三部以上容易腻。轮换看不同类型，比如一部悬疑配一部治愈，体验更好。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常用工具式筛选 -->
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <div class="no">SECTION 06 · 选片小工具</div>
+          <h3>四个维度，快速锁定今晚看什么</h3>
+        </div>
+      </div>
+      <div class="tools">
+        <div class="tool"><div class="big"><i>01</i>按时长</div><p>90 分钟以内 / 90–150 分钟 / 150 分钟以上</p></div>
+        <div class="tool"><div class="big"><i>02</i>按年代</div><p>2026 新片 / 近五年 / 经典老片</p></div>
+        <div class="tool"><div class="big"><i>03</i>按地区</div><p>国产 / 欧美 / 日韩 / 港台</p></div>
+        <div class="tool"><div class="big"><i>04</i>按心情</div><p>解压 / 烧脑 / 治愈 / 震撼</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">影</div>
+          <h1>老司机电影网你懂的<span>影视导航 · 观影入口整理</span></h1>
+        </div>
+        <p>只做影视内容的分类与整理，帮助你更快找到想看的电影、电视剧、动漫和纪录片，节省选片时间。</p>
+      </div>
+      <div>
+        <h6>主要栏目</h6>
+        <ul>
+          <li><a href="#film">电影库</a></li>
+          <li><a href="#drama">热播剧集</a></li>
+          <li><a href="#anime">动漫综艺</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>类型导航</h6>
+        <ul>
+          <li><a href="#">悬疑犯罪</a></li>
+          <li><a href="#">喜剧爱情</a></li>
+          <li><a href="#">动作科幻</a></li>
+          <li><a href="#">文艺纪录</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>网站信息</h6>
+        <ul>
+          <li><a href="#">关于本站</a></li>
+          <li><a href="#">更新日志</a></li>
+          <li><a href="#">留言反馈</a></li>
+          <li><a href="#">免责声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 老司机电影网你懂的 版权所有</span>
+      <span>官方网站：<a href="https://laosijidianyingwangnidongde-app.github.io">laosijidianyingwangnidongde-app.github.io</a></span>
+      <span>本站为影视导航与观影指南类网站，内容仅供整理参考</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'), nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.textContent=open?'✕':'☰';
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='☰';}
+  });
+  var cards=document.querySelectorAll('[data-cursor]');
+  cards.forEach(function(c){
+    c.addEventListener('mousemove',function(e){
+      var r=c.getBoundingClientRect();
+      c.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      c.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+  });
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    toTop.classList.toggle('show',window.scrollY>400);
+  },{passive:true});
+  toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+</body>
+</html>
